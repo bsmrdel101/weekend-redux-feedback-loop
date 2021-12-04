@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 // Import components
 import Feeling from '../Feeling/Feeling';
@@ -12,6 +13,20 @@ import Review from '../Review/Review';
 import Submission from '../Submission/Submission';
 
 function App() {
+  const feedbackResults = useSelector((store) => store.feedbackReducer);
+
+  const addFeedback = () => {
+    axios({
+      method: 'POST',
+      url: '/feedback',
+      data: feedbackResults
+    }).then((response) => {
+      console.log('response: ', response);
+    }).catch((error) => {
+      console.log('error: ', error);
+    })
+  }
+
   return (
     <div className='App'>
       <Router>

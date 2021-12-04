@@ -10,7 +10,7 @@ function Review() {
     const handleSubmit = () => {
         history.push('/submission');
         // push feedback into the database
-            
+        
         // clear feedback reducer                
     }
 
