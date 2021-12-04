@@ -14,7 +14,7 @@ function Feeling() {
     const handleFeelingScore = (event) => {
         event.preventDefault();
         dispatch({
-            type: 'ADD_FEELING_SCORE',
+            type: 'ADD_FEEDBACK_SCORE',
             payload: feelingScore
         });
         // history.push

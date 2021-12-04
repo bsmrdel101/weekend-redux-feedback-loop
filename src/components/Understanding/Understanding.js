@@ -14,7 +14,7 @@ function Understanding() {
     const handleUnderstandingScore = (event) => {
         event.preventDefault();
         dispatch({
-            type: 'ADD_UNDERSTANDING_SCORE',
+            type: 'ADD_FEEDBACK_SCORE',
             payload: understandingScore
         });
         // history.push
