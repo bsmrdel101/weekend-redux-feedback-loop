@@ -13,7 +13,9 @@ function Feeling() {
         dispatch({
             type: 'ADD_FEELING_SCORE',
             payload: feelingScore
-        })
+        });
+        // history.push
+        // move to next page
     }
 
     // User will input value
