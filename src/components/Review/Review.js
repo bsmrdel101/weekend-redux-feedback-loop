@@ -1,17 +1,34 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router";
+import axios from "axios";
 
 function Review() {
     const feedbackResults = useSelector((store) => store.feedbackReducer);
 
-    // Declare history
+    const addFeedback = () => {
+      axios({
+        method: 'POST',
+        url: '/feedback',
+        data: feedbackResults
+      }).then((response) => {
+        console.log('response: ', response);
+      }).catch((error) => {
+        console.log('error: ', error);
+      })
+    }
+
+    // Declare dispatch and history
+    const dispatch = useDispatch();
     const history = useHistory();
 
     const handleSubmit = () => {
         history.push('/submission');
         // push feedback into the database
-        
-        // clear feedback reducer                
+        addFeedback();
+        // clear feedback reducer           
+        dispatch({
+            type: 'CLEAR_FEEDBACK'
+        })     
     }
 
     return (

@@ -13,19 +13,19 @@ import Review from '../Review/Review';
 import Submission from '../Submission/Submission';
 
 function App() {
-  const feedbackResults = useSelector((store) => store.feedbackReducer);
+  // const feedbackResults = useSelector((store) => store.feedbackReducer);
 
-  const addFeedback = () => {
-    axios({
-      method: 'POST',
-      url: '/feedback',
-      data: feedbackResults
-    }).then((response) => {
-      console.log('response: ', response);
-    }).catch((error) => {
-      console.log('error: ', error);
-    })
-  }
+  // const addFeedback = () => {
+  //   axios({
+  //     method: 'POST',
+  //     url: '/feedback',
+  //     data: feedbackResults
+  //   }).then((response) => {
+  //     console.log('response: ', response);
+  //   }).catch((error) => {
+  //     console.log('error: ', error);
+  //   })
+  // }
 
   return (
     <div className='App'>

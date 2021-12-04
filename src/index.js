@@ -14,6 +14,8 @@ const feedbackReducer = (state = [], action) => {
     switch (action.type) {
         case 'ADD_FEEDBACK_SCORE':
             return [...state, action.payload];
+        case 'CLEAR_FEEDBACK':
+            return [];
         default:
             return state;
     }
