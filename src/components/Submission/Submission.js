@@ -5,7 +5,7 @@ function Submission() {
     const history = useHistory();
 
     const handleReset = () => {
-        history.push('/home');
+        history.push('/');
     }
     
     return (
