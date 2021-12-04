@@ -1,12 +1,9 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useState } from "react";
 
 function Feeling() {
     // Declare dispatch
     const dispatch = useDispatch();
-
-    // Feedback reducer
-    const feedbackReducer = useSelector(store => store.artistReducer);
 
     // Stores input data on local state
     let [feelingScore, setFeelingScore] = useState(0);
