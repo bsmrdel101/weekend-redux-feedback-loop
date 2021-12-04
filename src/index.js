@@ -11,7 +11,12 @@ import { Provider } from 'react-redux';
 
 // Redux reducers
 const feedbackReducer = (state = [], action) => {
-    return state;
+    switch (action.type) {
+        case 'ADD_FEELING_SCORE':
+            return [...state, action.payload];
+        default:
+            return state;
+    }
 }
 
 
