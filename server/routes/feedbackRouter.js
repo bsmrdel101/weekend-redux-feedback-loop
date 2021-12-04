@@ -19,11 +19,11 @@ pool.on('connect', () => {
 
 
 router.get('/', (req, res) => {
-  const sqlText = 'SELECT * FROM artist;'
+  const sqlText = 'SELECT * FROM feedback;'
   pool.query(sqlText)
     .then((dbRes) => {
-      const artistFromDb = dbRes.rows;
-      res.send(artistFromDb);
+      const feedbackFromDb = dbRes.rows;
+      res.send(feedbackFromDb);
     }).catch((dbErr) => {
       console.error(dbErr);
     });
