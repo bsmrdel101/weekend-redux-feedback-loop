@@ -31,6 +31,7 @@ function Feeling() {
                 <input type="number" 
                     // value={feelingScore}
                     onChange={(event) => {setFeelingScore(event.target.value)}} 
+                    placeholder="Enter a number 0 - 5"
                     required/>
                 {/* <button onClick={handleFeelingScore}>Next</button> */}
                 <button type="submit">Next</button>

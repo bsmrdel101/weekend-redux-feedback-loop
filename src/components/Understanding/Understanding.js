@@ -27,6 +27,7 @@ function Understanding() {
             <form onSubmit={(event) => handleUnderstandingScore(event)}>
                 <input type="number" 
                     onChange={(event) => {setUnderstandingScore(event.target.value)}} 
+                    placeholder="Enter a number 0 - 5"
                     required/>
                 <button type="submit">Next</button>
             </form>

@@ -8,6 +8,7 @@ import Feeling from '../Feeling/Feeling';
 import Understanding from '../Understanding/Understanding';
 import Support from '../Support/Support';
 import Comments from '../Comments/Comments';
+import Review from '../Review/Review';
 
 function App() {
 
@@ -24,12 +25,14 @@ function App() {
         <p><Link to="/understanding">Understanding</Link></p>
         <p><Link to="/support">Support</Link></p>
         <p><Link to="/comments">Comments</Link></p>
+        <p><Link to="/review">Review</Link></p>
 
         {/* Routes */}
         <Route path={"/feeling"} component={Feeling} />
         <Route path={"/understanding"} component={Understanding} />
         <Route path={"/support"} component={Support} />
         <Route path={"/comments"} component={Comments} />
+        <Route path={"/review"} component={Review} />
       </Router>
     </div>
   );
