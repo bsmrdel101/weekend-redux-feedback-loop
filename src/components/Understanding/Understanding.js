@@ -26,8 +26,8 @@ function Understanding() {
             <h1>How well are you Understanding the content?</h1>
             <form onSubmit={(event) => handleUnderstandingScore(event)}>
                 <input type="number" 
-                    value={understandingScore}
-                    onChange={(event) => {setUnderstandingScore(event.target.value)}} />
+                    onChange={(event) => {setUnderstandingScore(event.target.value)}} 
+                    required/>
                 <button type="submit">Next</button>
             </form>
         </>

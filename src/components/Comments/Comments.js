@@ -18,16 +18,16 @@ function Comments() {
             payload: commentsScore
         });
         // history.push
-        history.push('/support');
+        // history.push('/review');
     }
 
     return (
         <>
             <h1>Any comments you want to leave?</h1>
             <form onSubmit={(event) => handleCommentsScore(event)}>
-                <input type="text" 
-                    value={commentsScore}
-                    onChange={(event) => {setCommentsScore(event.target.value)}} />
+                <input type="text"
+                    onChange={(event) => {setCommentsScore(event.target.value)}} 
+                    required/>
                 <button type="submit">Next</button>
             </form>
         </>

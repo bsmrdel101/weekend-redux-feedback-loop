@@ -26,8 +26,8 @@ function Support() {
              <h1>How well are you being supported?</h1>
              <form onSubmit={(event) => handleSupportScore(event)}>
                  <input type="number" 
-                     value={supportScore}
-                     onChange={(event) => {setSupportScore(event.target.value)}} />
+                     onChange={(event) => {setSupportScore(event.target.value)}} 
+                     required/>
                  <button type="submit">Next</button>
              </form>
          </>
