@@ -30,16 +30,18 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    const newArtist = req.body;
+    const newFeedback = req.body;
     const sqlText = (`
-    INSERT INTO "artist"
-    ("name", "birthdate")
+    INSERT INTO "feedback"
+    ("feeling", "understanding", "support", "comment")
     VALUES
-      ($1, $2);
+      ($1, $2, $3, $4);
   `)
   const sqlValues = [
-    newArtist.name,
-    newArtist.birthdate,
+    newFeedback.feeling,
+    newFeedback.understanding,
+    newFeedback.support,
+    newFeedback.comment
   ]
   console.log(sqlText)
   pool.query(sqlText, sqlValues)
