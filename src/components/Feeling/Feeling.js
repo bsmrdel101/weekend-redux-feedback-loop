@@ -1,9 +1,11 @@
 import { useDispatch } from "react-redux";
 import { useState } from "react";
+import { useHistory } from "react-router";
 
 function Feeling() {
-    // Declare dispatch
+    // Declare dispatch and history
     const dispatch = useDispatch();
+    const history = useHistory();
 
     // Stores input data on local state
     let [feelingScore, setFeelingScore] = useState(0);
@@ -16,7 +18,7 @@ function Feeling() {
             payload: feelingScore
         });
         // history.push
-        // move to next page
+        history.push('/understanding');
     }
 
     // User will input value
