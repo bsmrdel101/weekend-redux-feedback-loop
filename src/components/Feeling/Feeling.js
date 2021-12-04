@@ -9,7 +9,8 @@ function Feeling() {
     let [feelingScore, setFeelingScore] = useState(0);
 
     // Updates feedback reducer with input value
-    const handleFeelingScore = () => {
+    const handleFeelingScore = (event) => {
+        event.preventDefault();
         dispatch({
             type: 'ADD_FEELING_SCORE',
             payload: feelingScore
@@ -24,11 +25,12 @@ function Feeling() {
     return (
         <>
             <h1>How are you feeling today?</h1>
-            <form>
+            <form onSubmit={(event) => handleFeelingScore(event)}>
                 <input type="number" 
                     value={feelingScore}
                     onChange={(event) => {setFeelingScore(event.target.value)}} />
-                <button onSubmit={handleFeelingScore}>Next</button>
+                {/* <button onClick={handleFeelingScore}>Next</button> */}
+                <button type="submit">Next</button>
             </form>
         </>
     );
