@@ -18,7 +18,7 @@ function Comments() {
             payload: commentsScore
         });
         // history.push
-        // history.push('/review');
+        history.push('/review');
     }
 
     return (
