@@ -8,14 +8,14 @@ function Comments() {
     const history = useHistory();
 
     // Stores input data on local state
-    let [understandingScore, setUnderstandingScore] = useState(0);
+    let [commentsScore, setCommentsScore] = useState('');
 
     // Updates feedback reducer with input value
-    const handleUnderstandingScore = (event) => {
+    const handleCommentsScore = (event) => {
         event.preventDefault();
         dispatch({
             type: 'ADD_FEEDBACK_SCORE',
-            payload: understandingScore
+            payload: commentsScore
         });
         // history.push
         history.push('/support');
@@ -24,10 +24,10 @@ function Comments() {
     return (
         <>
             <h1>Any comments you want to leave?</h1>
-            <form onSubmit={(event) => handleUnderstandingScore(event)}>
-                <input type="number" 
-                    value={understandingScore}
-                    onChange={(event) => {setUnderstandingScore(event.target.value)}} />
+            <form onSubmit={(event) => handleCommentsScore(event)}>
+                <input type="text" 
+                    value={commentsScore}
+                    onChange={(event) => {setCommentsScore(event.target.value)}} />
                 <button type="submit">Next</button>
             </form>
         </>
