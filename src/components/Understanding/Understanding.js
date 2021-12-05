@@ -28,7 +28,7 @@ function Understanding() {
             <form onSubmit={(event) => handleUnderstandingScore(event)}>
                 <TextField id="filled-basic" label="Enter a number" variant="standard" type="number"
                 onChange={(event) => {setUnderstandingScore(event.target.value)}} required/>
-                <div>
+                <div className="submit-btn">
                     <Button variant="contained" type="submit">Next</Button>
                 </div>
             </form>

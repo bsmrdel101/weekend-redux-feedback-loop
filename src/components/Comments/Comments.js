@@ -28,7 +28,7 @@ function Comments() {
             <form onSubmit={(event) => handleCommentsScore(event)}>
                 <TextField id="filled-basic" label="Leave a comment" variant="standard" type="text"
                 onChange={(event) => {setCommentsScore(event.target.value)}}/>
-                <div>
+                <div className="submit-btn">
                     <Button variant="contained" type="submit">Next</Button>
                 </div>
             </form>

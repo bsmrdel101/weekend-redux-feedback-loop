@@ -28,7 +28,7 @@ function Support() {
              <form onSubmit={(event) => handleSupportScore(event)}>
                 <TextField id="filled-basic" label="Enter a number" variant="standard" type="number"
                 onChange={(event) => {setSupportScore(event.target.value)}} required/>
-                <div>
+                <div className="submit-btn">
                     <Button variant="contained" type="submit">Next</Button>
                 </div>
             </form>

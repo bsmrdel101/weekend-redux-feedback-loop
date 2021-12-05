@@ -32,8 +32,8 @@ function Feeling() {
                 <TextField id="filled-basic" label="Enter a number" variant="standard" type="number"
                 onChange={(event) => {setFeelingScore(event.target.value)}} required/>
                 {/* <button onClick={handleFeelingScore}>Next</button> */}
-                <div>
-                    <Button className="submit-btn" variant="contained" type="submit">Next</Button>
+                <div className="submit-btn">
+                    <Button variant="contained" type="submit">Next</Button>
                 </div>
             </form>
         </>

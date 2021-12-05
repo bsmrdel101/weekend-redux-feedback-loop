@@ -22,4 +22,6 @@ h4 {
   font-style: italic;
 }
 
-/* MUI */
+.submit-btn {
+  margin-top: 20px;
+}
