@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { useHistory } from "react-router";
+import { TextField, Button } from "@mui/material";
 
 function Comments() {
     // Declare dispatch and history
@@ -28,7 +29,7 @@ function Comments() {
                 <TextField id="filled-basic" label="Leave a comment" variant="standard" type="text"
                 onChange={(event) => {setCommentsScore(event.target.value)}}/>
                 <div>
-                    <Button className="submit-btn" variant="contained" type="submit">Next</Button>
+                    <Button variant="contained" type="submit">Next</Button>
                 </div>
             </form>
         </>

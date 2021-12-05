@@ -33,7 +33,7 @@ function Feeling() {
                 onChange={(event) => {setFeelingScore(event.target.value)}} required/>
                 {/* <button onClick={handleFeelingScore}>Next</button> */}
                 <div>
-                    <Button className="submit-btn" variant="contained" type="submit">Submit</Button>
+                    <Button className="submit-btn" variant="contained" type="submit">Next</Button>
                 </div>
             </form>
         </>

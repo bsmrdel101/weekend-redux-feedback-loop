@@ -1,4 +1,5 @@
 import { useHistory } from "react-router";
+import { Button } from "@mui/material";
 
 function Submission() {
     // Declare history
@@ -11,7 +12,7 @@ function Submission() {
     return (
         <>
             <h1>Thank you for your feedback!</h1>
-            <button onClick={handleReset}>Leave new feedback</button>
+            <Button onClick={handleReset} variant="contained">Leave new feedback</Button>
         </>
     );
 }

@@ -29,7 +29,7 @@ function Support() {
                 <TextField id="filled-basic" label="Enter a number" variant="standard" type="number"
                 onChange={(event) => {setSupportScore(event.target.value)}} required/>
                 <div>
-                    <Button className="submit-btn" variant="contained" type="submit">Submit</Button>
+                    <Button variant="contained" type="submit">Next</Button>
                 </div>
             </form>
          </>
