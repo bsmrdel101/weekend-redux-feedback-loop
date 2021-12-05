@@ -12,6 +12,7 @@ import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
 import Submission from '../Submission/Submission';
 import Admin from '../Admin/Admin';
+import Home from '../Home/Home';
 
 function App() {
   // const feedbackResults = useSelector((store) => store.feedbackReducer);
@@ -36,6 +37,7 @@ function App() {
           <h4>Don't forget it!</h4>
         </header>
         {/* Routes */}
+        <Route exact path={"/"} component={Home} />
         <Route path={"/feeling"} component={Feeling} />
         <Route path={"/understanding"} component={Understanding} />
         <Route path={"/support"} component={Support} />
