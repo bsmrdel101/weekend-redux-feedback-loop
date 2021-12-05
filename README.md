@@ -11,7 +11,7 @@ _Duration: 2 day Sprint_
 This application contains 3 questions that ask about how your day of class went, and asks the user to give a score of 1-5. Each page has a different question, such as How are you feeling today? How well did you understand the content? How well did you feel supported?
 
 
-To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](https://weekend-challenge-form.herokuapp.com/#/feeling)
+To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](https://weekend-challenge-form.herokuapp.com/#/)
 
 ## Screen Shot
 
