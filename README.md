@@ -51,4 +51,4 @@ To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.he
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
 
 ## Support
-If you have suggestions or issues, please email me at [smrdelb@gmail.com]
+If you have suggestions or issues, please email me at smrdelb@gmail.com
