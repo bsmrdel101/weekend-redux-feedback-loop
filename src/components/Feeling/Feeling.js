@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { useHistory } from "react-router";
+import { TextField } from "@mui/material";
 
 function Feeling() {
     // Declare dispatch and history
@@ -28,11 +29,8 @@ function Feeling() {
         <>
             <h1>How are you feeling today?</h1>
             <form onSubmit={(event) => handleFeelingScore(event)}>
-                <input type="number" 
-                    // value={feelingScore}
-                    onChange={(event) => {setFeelingScore(event.target.value)}} 
-                    placeholder="Enter a number 0 - 5"
-                    required/>
+                <TextField id="filled-basic" label="Enter a number" variant="filled" type="number"
+                onChange={(event) => {setFeelingScore(event.target.value)}} required/>
                 {/* <button onClick={handleFeelingScore}>Next</button> */}
                 <button type="submit">Next</button>
             </form>
