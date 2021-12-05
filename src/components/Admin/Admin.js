@@ -1,11 +1,27 @@
 import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+import axios from "axios";
 
 function Admin() {
     const feedbackResults = useSelector((store) => store.feedbackReducer);
 
-    // Declare dispatch and history
+    // Declare dispatch
     const dispatch = useDispatch();
-    const history = useHistory();
+
+    useEffect(() => {
+        getFeedback();
+      }, []);
+
+    const getFeedback = () => {
+        axios({
+            method: 'GET',
+            url: '/feedback',
+        }).then((response) => {
+            console.log('response: ', response);
+        }).catch((error) => {
+            console.log('error: ', error);
+        })
+    }
 
     return (
         <>
