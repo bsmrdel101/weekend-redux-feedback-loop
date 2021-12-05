@@ -11,6 +11,7 @@ import Support from '../Support/Support';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
 import Submission from '../Submission/Submission';
+import Admin from '../Admin/Admin';
 
 function App() {
   // const feedbackResults = useSelector((store) => store.feedbackReducer);
@@ -41,6 +42,7 @@ function App() {
         <Route path={"/comments"} component={Comments} />
         <Route path={"/review"} component={Review} />
         <Route path={"/submission"} component={Submission} />
+        <Route path={"/admin"} component={Admin} />
       </Router>
     </div>
   );
