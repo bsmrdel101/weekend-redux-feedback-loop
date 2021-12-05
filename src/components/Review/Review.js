@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 import axios from "axios";
+import { Button } from "@mui/material";
 
 function Review() {
     const feedbackResults = useSelector((store) => store.feedbackReducer);
@@ -38,7 +39,7 @@ function Review() {
             <p>Understanding: {feedbackResults[1]}</p>
             <p>Support: {feedbackResults[2]}</p>
             <p>Comments: {feedbackResults[3]}</p>
-            <button onClick={handleSubmit}>Submit Feedback</button>
+            <Button onClick={handleSubmit} variant="contained">Submit Feedback</Button>
         </>
     );
 }

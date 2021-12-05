@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { useHistory } from "react-router";
+import { TextField, Button } from "@mui/material";
 
 function Understanding() {
     // Declare dispatch and history
@@ -25,11 +26,11 @@ function Understanding() {
         <>
             <h1>How well are you Understanding the content?</h1>
             <form onSubmit={(event) => handleUnderstandingScore(event)}>
-                <input type="number" 
-                    onChange={(event) => {setUnderstandingScore(event.target.value)}} 
-                    placeholder="Enter a number 0 - 5"
-                    required/>
-                <button type="submit">Next</button>
+                <TextField id="filled-basic" label="Enter a number" variant="standard" type="number"
+                onChange={(event) => {setUnderstandingScore(event.target.value)}} required/>
+                <div className="submit-btn">
+                    <Button variant="contained" type="submit">Next</Button>
+                </div>
             </form>
         </>
     );

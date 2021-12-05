@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { useHistory } from "react-router";
+import { TextField, Button } from "@mui/material";
 
 function Support() {
      // Declare dispatch and history
@@ -25,12 +26,12 @@ function Support() {
          <>
              <h1>How well are you being supported?</h1>
              <form onSubmit={(event) => handleSupportScore(event)}>
-                 <input type="number" 
-                     onChange={(event) => {setSupportScore(event.target.value)}} 
-                     placeholder="Enter a number 0 - 5"
-                     required/>
-                 <button type="submit">Next</button>
-             </form>
+                <TextField id="filled-basic" label="Enter a number" variant="standard" type="number"
+                onChange={(event) => {setSupportScore(event.target.value)}} required/>
+                <div className="submit-btn">
+                    <Button variant="contained" type="submit">Next</Button>
+                </div>
+            </form>
          </>
      );
 }
