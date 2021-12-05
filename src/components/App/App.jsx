@@ -34,14 +34,6 @@ function App() {
           <h1 className='App-title'>Feedback!</h1>
           <h4>Don't forget it!</h4>
         </header>
-        {/* Temporary links */}
-        <p><Link to="/">Home</Link></p>
-        <p><Link to="/feeling">Feeling</Link></p>
-        <p><Link to="/understanding">Understanding</Link></p>
-        <p><Link to="/support">Support</Link></p>
-        <p><Link to="/comments">Comments</Link></p>
-        <p><Link to="/review">Review</Link></p>
-
         {/* Routes */}
         <Route path={"/feeling"} component={Feeling} />
         <Route path={"/understanding"} component={Understanding} />
