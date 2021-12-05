@@ -22,13 +22,13 @@ function Review() {
     const history = useHistory();
 
     const handleSubmit = () => {
-        history.push('/submission');
         // push feedback into the database
         addFeedback();
         // clear feedback reducer           
         dispatch({
             type: 'CLEAR_FEEDBACK'
         })     
+        history.push('/submission');
     }
 
     return (

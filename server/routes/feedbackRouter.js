@@ -30,7 +30,12 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    const newFeedback = req.body;
+    const newFeedback = {
+        feeling: req.body[0],
+        understanding: req.body[1],
+        support: req.body[2],
+        comments: req.body[3]
+    };
     console.log(newFeedback);
     const sqlText = (`
     INSERT INTO "feedback"
