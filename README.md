@@ -48,7 +48,7 @@ To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](https:
 - Material UI
 
 ## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. Thanks to my instructor Matt for teaching us.
 
 ## Support
 If you have suggestions or issues, please email me at smrdelb@gmail.com
